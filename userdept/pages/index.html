@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="../app.js" defer></script>
+    <title>User Department</title>
+</head>
+
+<body>
+    <div id="user-form">
+        <h1>Gerenciamento de Usuários e Departamentos </h1>
+        <h2>Adicione um novo usuário</h2>
+        <form id="add-user-form">
+            <input type="text" id="Nome" placeholder="User Name" required>
+            <input type="email" id="Email" placeholder="Email" required>
+            <select id="Departamento" required>
+                <option value="">Selecione o departamento</option>
+                <option value="1">Gestão</option>
+                <option value="2">Informática</option>
+            </select>
+            <button type="submit" id="submit-button">Adicionar Usuário</button>
+        </form>
+    </div>
+
+    <table id="user-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Departamento</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os usuários serão inseridos aqui -->
+        </tbody>
+    </table>
+</body>
+
+</html>
